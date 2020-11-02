@@ -60,6 +60,6 @@ var colorCode = $("input").each(function(index) {
   });
 
   // refresh color code every 15 minutes
-  setInterval(function() {
-    colorCode;
-    }, 900000);
+  setInterval(function(colorCode) {
+    
+    }, 180000);
