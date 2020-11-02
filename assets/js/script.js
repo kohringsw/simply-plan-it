@@ -1,10 +1,8 @@
 var ids = ["#7", "#8", "#9", "#10", "#11", "#12", "#1", "#2", "#3", "#4", "#5"] 
-var hour = index + 7;
-console.log()
-var index = 0;
+
 
 // current time and format
-var currentTime = moment().subtract(12, "hours").format("H");
+var currentTime = moment().format("H");
 console.log(currentTime);
 
 
@@ -38,8 +36,24 @@ $("#4").val(localStorage.getItem("4"));
 $("#5").val(localStorage.getItem("5"));
 
 $("input").each(function(index) {
-    console.log(index + 7 + $(this).text());
-    if (index + 7 === currentTime) {
+
+    // convert index into an integer
+    var index = parseInt(index + 7);
+    console.log("Index: " + index);
+
+    // convert currentTime into an integer
+    var hour = parseInt(currentTime);
+    console.log("Hour: " + hour);
+
+    if (index === hour) {
         $(this).addClass("present");
+    }
+
+    else if (index < hour) {
+        $(this).addClass("past");
+    }
+
+    else if (index > hour) {
+        $(this).addClass("future");
     }
   });
