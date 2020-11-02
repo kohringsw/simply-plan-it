@@ -35,7 +35,7 @@ $("#3").val(localStorage.getItem("3"));
 $("#4").val(localStorage.getItem("4"));
 $("#5").val(localStorage.getItem("5"));
 
-$("input").each(function(index) {
+var colorCode = $("input").each(function(index) {
 
     // convert index into an integer
     var index = parseInt(index + 7);
@@ -45,6 +45,7 @@ $("input").each(function(index) {
     var hour = parseInt(currentTime);
     console.log("Hour: " + hour);
 
+    // conditions for color coding
     if (index === hour) {
         $(this).addClass("present");
     }
@@ -57,3 +58,8 @@ $("input").each(function(index) {
         $(this).addClass("future");
     }
   });
+
+  // refresh color code every 15 minutes
+  setInterval(function() {
+    colorCode;
+    }, 900000);
