@@ -15,18 +15,18 @@
   <body>
     <header class="jumbotron col-12">
       <h1 class="display-3"><span class="oi oi-account-login"></span> Simply Plan It.</h1>
-      <h3 class="lead">an easy calendar app to simply plan your day</h3>
-      <p id="currentDay" class="lead"></p>
+      <h3 class="lead text-info">an easy calendar app to simply plan your day</h3>
+      <p id="currentDay" class="lead font-weight-bold mt-3"></p>
     </header>
     <main class="col-12 d-flex flex-column">
       <!-- Start 7AM Timeblock -->
       <div class="m-3 row justify-content-around">
         <div class="col-2 col-md-1 border rounded-lg bg-dark text-light d-flex align-items-center justify-content-center lead">7am</div>
         <div class="col-7 col-md-9 border border-dark rounded rounded-lg d-flex" style="padding:0">
-          <input type="text-paragraph" style="width:100%; height:100%; padding-left: 10px" class="" id="7">
+          <input type="text" style="width:100%; height:100%; padding-left: 10px" class="tasks" id="7">
         </div>
         <div class="col-2 col-md-1 d-flex justify-content" style="padding:0">
-          <button class="border rounded-lg bg-info d-flex justify-content-center align-items-center" style="width:100%; height:100%">
+          <button id="save" class="saveBtn border rounded-lg bg-info d-flex justify-content-center align-items-center" style="width:100%; height:100%">
             <span class="oi oi-account-login" style="color: white; font-size: 30px"></span>
           </button>
         </div>
@@ -35,10 +35,10 @@
       <div class="m-3 row justify-content-around">
         <div class="col-2 col-md-1 border rounded-lg bg-dark text-light d-flex align-items-center justify-content-center lead">8am</div>
         <div class="col-7 col-md-9 border border-dark rounded rounded-lg d-flex" style="padding:0">
-          <input type="text-paragraph" style="width:100%; height:100%; padding-left: 10px" class="" id="8">
+          <input type="text" style="width:100%; height:100%; padding-left: 10px" class="tasks" id="8">
         </div>
         <div class="col-2 col-md-1 d-flex justify-content" style="padding:0">
-          <button class="border rounded-lg bg-info d-flex justify-content-center align-items-center" style="width:100%; height:100%">
+          <button id="save" class="saveBtn border rounded-lg bg-info d-flex justify-content-center align-items-center" style="width:100%; height:100%">
             <span class="oi oi-account-login" style="color: white; font-size: 30px"></span>
           </button>
         </div>
@@ -47,10 +47,10 @@
       <div class="m-3 row justify-content-around">
         <div class="col-2 col-md-1 border rounded-lg bg-dark text-light d-flex align-items-center justify-content-center lead">9am</div>
         <div class="col-7 col-md-9 border border-dark rounded rounded-lg d-flex" style="padding:0">
-          <input type="text-paragraph" style="width:100%; height:100%; padding-left: 10px" class="" id="9">
+          <input type="text" style="width:100%; height:100%; padding-left: 10px" class="tasks" id="9">
         </div>
         <div class="col-2 col-md-1 d-flex justify-content" style="padding:0">
-          <button class="border rounded-lg bg-info d-flex justify-content-center align-items-center" style="width:100%; height:100%">
+          <button id="save" class="saveBtn border rounded-lg bg-info d-flex justify-content-center align-items-center" style="width:100%; height:100%">
             <span class="oi oi-account-login" style="color: white; font-size: 30px"></span>
           </button>
         </div>
@@ -59,10 +59,10 @@
       <div class="m-3 row justify-content-around">
         <div class="col-2 col-md-1 border rounded-lg bg-dark text-light d-flex align-items-center justify-content-center lead">10am</div>
         <div class="col-7 col-md-9 border border-dark rounded rounded-lg d-flex" style="padding:0">
-          <input type="text-paragraph" style="width:100%; height:100%; padding-left: 10px" class="" id="10">
+          <input type="text" style="width:100%; height:100%; padding-left: 10px" class="tasks" id="10">
         </div>
         <div class="col-2 col-md-1 d-flex justify-content" style="padding:0">
-          <button class="border rounded-lg bg-info d-flex justify-content-center align-items-center" style="width:100%; height:100%">
+          <button id="save" class="saveBtn border rounded-lg bg-info d-flex justify-content-center align-items-center" style="width:100%; height:100%">
             <span class="oi oi-account-login" style="color: white; font-size: 30px"></span>
           </button>
         </div>
@@ -71,10 +71,10 @@
       <div class="m-3 row justify-content-around">
         <div class="col-2 col-md-1 border rounded-lg bg-dark text-light d-flex align-items-center justify-content-center lead">11am</div>
         <div class="col-7 col-md-9 border border-dark rounded rounded-lg d-flex" style="padding:0">
-          <input type="text-paragraph" style="width:100%; height:100%; padding-left: 10px" class="" id="11">
+          <input type="text" style="width:100%; height:100%; padding-left: 10px" class="tasks" id="11">
         </div>
         <div class="col-2 col-md-1 d-flex justify-content" style="padding:0">
-          <button class="border rounded-lg bg-info d-flex justify-content-center align-items-center" style="width:100%; height:100%">
+          <button id="save" class="saveBtn border rounded-lg bg-info d-flex justify-content-center align-items-center" style="width:100%; height:100%">
             <span class="oi oi-account-login" style="color: white; font-size: 30px"></span>
           </button>
         </div>
@@ -83,10 +83,10 @@
       <div class="m-3 row justify-content-around">
         <div class="col-2 col-md-1 border rounded-lg bg-dark text-light d-flex align-items-center justify-content-center lead">12pm</div>
         <div class="col-7 col-md-9 border border-dark rounded rounded-lg d-flex" style="padding:0">
-          <input type="text-paragraph" style="width:100%; height:100%; padding-left: 10px" class="" id="12">
+          <input type="text" style="width:100%; height:100%; padding-left: 10px" class="tasks" id="12">
         </div>
         <div class="col-2 col-md-1 d-flex justify-content" style="padding:0">
-          <button class="border rounded-lg bg-info d-flex justify-content-center align-items-center" style="width:100%; height:100%">
+          <button id="save" class="saveBtn border rounded-lg bg-info d-flex justify-content-center align-items-center" style="width:100%; height:100%">
             <span class="oi oi-account-login" style="color: white; font-size: 30px"></span>
           </button>
         </div>
@@ -95,10 +95,10 @@
       <div class="m-3 row justify-content-around">
         <div class="col-2 col-md-1 border rounded-lg bg-dark text-light d-flex align-items-center justify-content-center lead">1pm</div>
         <div class="col-7 col-md-9 border border-dark rounded rounded-lg d-flex" style="padding:0">
-          <input type="text-paragraph" style="width:100%; height:100%; padding-left: 10px" class="" id="1">
+          <input type="text" style="width:100%; height:100%; padding-left: 10px" class="tasks" id="1">
         </div>
         <div class="col-2 col-md-1 d-flex justify-content" style="padding:0">
-          <button class="border rounded-lg bg-info d-flex justify-content-center align-items-center" style="width:100%; height:100%">
+          <button id="save" class="saveBtn border rounded-lg bg-info d-flex justify-content-center align-items-center" style="width:100%; height:100%">
             <span class="oi oi-account-login" style="color: white; font-size: 30px"></span>
           </button>
         </div>
@@ -107,10 +107,10 @@
       <div class="m-3 row justify-content-around">
         <div class="col-2 col-md-1 border rounded-lg bg-dark text-light d-flex align-items-center justify-content-center lead">2pm</div>
         <div class="col-7 col-md-9 border border-dark rounded rounded-lg d-flex" style="padding:0">
-          <input type="text-paragraph" style="width:100%; height:100%; padding-left: 10px" class="" id="2">
+          <input type="text" style="width:100%; height:100%; padding-left: 10px" class="tasks" id="2">
         </div>
         <div class="col-2 col-md-1 d-flex justify-content" style="padding:0">
-          <button class="border rounded-lg bg-info d-flex justify-content-center align-items-center" style="width:100%; height:100%">
+          <button id="save" class="saveBtn border rounded-lg bg-info d-flex justify-content-center align-items-center" style="width:100%; height:100%">
             <span class="oi oi-account-login" style="color: white; font-size: 30px"></span>
           </button>
         </div>
@@ -119,10 +119,10 @@
       <div class="m-3 row justify-content-around">
         <div class="col-2 col-md-1 border rounded-lg bg-dark text-light d-flex align-items-center justify-content-center lead">3pm</div>
         <div class="col-7 col-md-9 border border-dark rounded rounded-lg d-flex" style="padding:0">
-          <input type="text-paragraph" style="width:100%; height:100%; padding-left: 10px" class="" id="3">
+          <input type="text" style="width:100%; height:100%; padding-left: 10px" class="tasks" id="3">
         </div>
         <div class="col-2 col-md-1 d-flex justify-content" style="padding:0">
-          <button class="border rounded-lg bg-info d-flex justify-content-center align-items-center" style="width:100%; height:100%">
+          <button id="save" class="saveBtn border rounded-lg bg-info d-flex justify-content-center align-items-center" style="width:100%; height:100%">
             <span class="oi oi-account-login" style="color: white; font-size: 30px"></span>
           </button>
         </div>
@@ -131,10 +131,10 @@
       <div class="m-3 row justify-content-around">
         <div class="col-2 col-md-1 border rounded-lg bg-dark text-light d-flex align-items-center justify-content-center lead">4pm</div>
         <div class="col-7 col-md-9 border border-dark rounded rounded-lg d-flex" style="padding:0">
-          <input type="text-paragraph" style="width:100%; height:100%; padding-left: 10px" class="" id="4">
+          <input type="text" style="width:100%; height:100%; padding-left: 10px" class="tasks" id="4">
         </div>
         <div class="col-2 col-md-1 d-flex justify-content" style="padding:0">
-          <button class="border rounded-lg bg-info d-flex justify-content-center align-items-center" style="width:100%; height:100%">
+          <button id="save" class="saveBtn border rounded-lg bg-info d-flex justify-content-center align-items-center" style="width:100%; height:100%">
             <span class="oi oi-account-login" style="color: white; font-size: 30px"></span>
           </button>
         </div>
@@ -143,15 +143,16 @@
       <div class="m-3 row justify-content-around">
         <div class="col-2 col-md-1 border rounded-lg bg-dark text-light d-flex align-items-center justify-content-center lead">5pm</div>
         <div class="col-7 col-md-9 border border-dark rounded rounded-lg d-flex" style="padding:0">
-          <input type="text-paragraph" style="width:100%; height:100%; padding-left: 10px" class="" id="5">
+          <input type="text" style="width:100%; height:100%; padding-left: 10px" class="tasks" id="5">
         </div>
         <div class="col-2 col-md-1 d-flex justify-content" style="padding:0">
-          <button class="border rounded-lg bg-info d-flex justify-content-center align-items-center" style="width:100%; height:100%">
+          <button id="save" class="saveBtn border rounded-lg bg-info d-flex justify-content-center align-items-center" style="width:100%; height:100%">
             <span class="oi oi-account-login" style="color: white; font-size: 30px"></span>
           </button>
         </div>
       </div>
     </main>
+    
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
@@ -159,6 +160,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+  <script src="./assets/js/script.js"></script>
   </body>
   
 </html>
